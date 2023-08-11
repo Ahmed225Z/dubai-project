@@ -1,0 +1,322 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    min-height: 10vh;
+    position: relative;
+}
+
+
+
+/* 
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(82, 25, 25)
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue-color);
+    
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--blue-alt-color);
+} */
+
+.container {
+    width: min(100% - 500px, 1700px);
+    margin-inline: auto;
+}
+
+@media(max-width: 590px) {
+    .container {
+        width: 375px;
+        margin: auto;
+    }
+}
+
+@media(min-width: 591px) {
+    .container {
+        width: 475px;
+        margin: auto;
+    }
+}
+
+@media(min-width: 691px) {
+    .container {
+        width: 675px;
+        margin: auto;
+    }
+}
+
+/* medium Screen*/
+@media(min-width: 992px) {
+    .container {
+        width: min(100% - 500px, 1700px);
+
+    }
+}
+
+/* large Screen*/
+@media(min-width: 1200px) {
+    .container {
+        width: 1170px;
+        margin: auto;
+    }
+}
+
+/* start navbar */
+.container .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+/* start navbar */
+.container .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+
+
+.container .navbar .image img {
+    max-width: 200px;
+    height: 50px;
+}
+
+.container .navbar .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .navbar button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #fafafa;
+    transition: .3s all;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.container .navbar button:hover {
+    background-color: antiquewhite;
+    border-radius: 20px;
+}
+
+.container .navbar button span {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+
+}
+
+.container .navbar i {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.parent {
+    background-color: #fafafa;
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 14px -2px gray;
+}
+
+/* start navbar */
+/* start welcome */
+.welcome{
+    margin-top: 100px;
+    min-height: 69vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome form {
+    padding: 50px;
+}
+.welcome h1 {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 28px;
+}
+.welcome p {
+    font-size: 21px;
+    color: gray;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.welcome input[type="radio"] {
+    width: 28px;
+    height: 28px;
+    background-color: blue;
+    color: white;
+    border-color: coral;
+    margin-right: 20px;
+}
+.welcome .sup {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 35px;
+}
+.welcome input[type="submit"] {
+    background-color: blue;
+    color: white;
+    padding: 18px 70px;
+    border: none;
+    border-radius: 10px;
+    font-size: 21px;
+    margin: 50px 30px 0 0;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.welcome .need {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    padding: 19px 22px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-size: 19px;
+    font-weight: 600;
+}
+.welcome .active {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+}
+
+
+/* end welcome */
+
+
+/* Start footer */
+.footer {
+    background-color: #fafafa;
+    
+}
+
+.footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 150px;
+}
+
+.footer span {
+    color: #7a809a;
+    font-size: 16px;
+}
+
+/* end footer */
+/* start reaction */
+.reaction {
+
+    position: fixed;
+    left: 5px;
+    z-index: 20;
+    bottom: 0px;
+    padding: 15px;
+    background-color: #226dbd;
+    color: white;
+    transition: .6s;
+    font-size: 28px;
+}
+
+.reaction i {
+    transition: .6s;
+}
+
+.reaction:hover i {
+    transform: rotate(360deg);
+}
+
+.reaction:hover body {
+    filter: blur(4px);
+}
+
+.react-icon {
+    position: fixed;
+    border-radius: 6px;
+    top: 300px;
+    width: 30%;
+    height: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 12px 0px black;
+    border-top: 10px solid #226dbd;
+    transition: .6s;
+    display: none;
+
+
+}
+
+.react .reaction:hover {
+    background-color: blue;
+}
+
+.react-icon img {
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+.icons i {
+    font-size: 100px;
+    transition: .6s;
+
+    margin-right: 12px;
+}
+
+.icons i:hover {
+    font-size: 90px;
+    color: green;
+}
+
+.react-icon p {
+    margin-top: 60px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.react-icon p span {
+    color: #226dbd;
+    text-transform: uppercase;
+}
+
+/* end reaction */
